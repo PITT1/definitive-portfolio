@@ -2,6 +2,9 @@
 import { Image } from "astro:assets";
 import svgl from "../../public/svgl.png";
 import stockin from "../../public/stockin.png";
+import tresenraya from "../../public/3enraya.png";
+import agecalculator from "../../public/agecalculator.png";
+import androidGame from "../../public/android-game.png";
 
 interface Project {
   title: string;
@@ -25,6 +28,27 @@ const projects: Project[] = [
     link: "https://github.com/pheralb/svgl",
     preview: "https://svgl.app",
     status: "Contributor",
+  },
+  {
+    title: "juego de 3 en raya",
+    image: tresenraya as ImageMetadata,
+    link: "https://github.com/PITT1/tic-tac-toe-reactjs",
+    preview: "https://tic-tac-toe-pitt1.netlify.app/",
+    status: "Finalizado",
+  },
+  {
+    title: "calculadora de edad (Frontend Mentor)",
+    image: agecalculator as ImageMetadata,
+    link: "https://github.com/PITT1/Age-calculator-Frontend-Mentor",
+    preview: "https://age-calculator-pitt1.netlify.app/",
+    status: "Finalizado",
+  },
+  {
+    title: "juego de plataformas movil",
+    image: androidGame as ImageMetadata,
+    link: "#",
+    preview: "#",
+    status: "en desarrollo, falta desplegar",
   },
 ];
 ---

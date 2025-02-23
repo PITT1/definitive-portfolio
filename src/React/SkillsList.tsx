@@ -46,7 +46,7 @@ const SkillsList = () => {
     ],
     "desarrollo de backend": [
       "uso de fastApi para desarrollo de API's",
-      "administracion de base de datos con SQL y astro DB",
+      "administracion de base de datos con SQL,astro DB y firebase",
     ],
     "desarrollo de video juegos": [
       "Desarrollo de video juegos con Godot engine",
