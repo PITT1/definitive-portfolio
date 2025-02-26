@@ -1,24 +1,43 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import image1 from "../../public/android-game.png"
+import image2 from "../tinybrave/tinybrave1.png"
+import image3 from "../tinybrave/tinybrave2.png"
+import image4 from "../tinybrave/tinybrave3.png"
+import image5 from "../tinybrave/tinybrave4.png"
 import { Image } from "astro:assets";
 ---
 
 <Layout title="Tiny Brave">
-    <header class="bg-gray-800 p-4">
-        <h1 class="text-3xl font-bold text-left">Tiny Brave</h1>
+    <header class="p-4">
+        <h1 class="text-9xl font-bold text-center text-white eagle-lake-font">Tiny Brave</h1>
     </header>
     <main class="flex flex-col items-center p-8">
-        <section class="text-center mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Join the Adventure!</h2>
-            <p class="mb-4">Tiny Brave is an exciting mobile game where you embark on epic quests and battle fierce enemies. Are you brave enough to take on the challenge?</p>
+        <section class="text-center mb-8 text-white">
+            <h2 class="text-2xl font-semibold mb-4">¡Unete a la aventura!</h2>
+            <p class="mb-4">Tiny brave es un juego de accion de plataformas inspirado en los antiguos juegos de los años 90 como Mario Bross, Contra o Ninja Gaiden, para ganar en este juego tienes que ser rapido y sobre todo VALIENTE</p>
             <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download Now</a>
         </section>
         <section class="w-full max-w-md">
-            <Image src={image1} alt="Game Screenshot" class="w-full rounded shadow-lg">
+            <Image src={image1} alt="Game Screenshot1" class="w-full rounded shadow-lg">
+            <Image src={image2} alt="Game Screenshot2" class="w-full rounded shadow-lg">
+            <Image src={image3} alt="Game Screenshot3" class="w-full rounded shadow-lg">
+            <Image src={image4} alt="Game Screenshot4" class="w-full rounded shadow-lg">
+            <Image src={image5} alt="Game Screenshot5" class="w-full rounded shadow-lg">
         </section>
     </main>
     <footer class="bg-gray-800 p-4 text-center">
-        <p class="text-white">&copy; 2023 Tiny Brave. All rights reserved.</p>
+        <p class="text-white">&copy; 2025 Tiny Brave. Todos los derechos reservados.</p>
     </footer>
 </Layout>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+    .eagle-lake-font {
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
