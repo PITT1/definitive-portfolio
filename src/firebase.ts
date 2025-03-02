@@ -1,16 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import { apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId, appId, measurementId } from './env';
+import { appEnv } from './env';
 
 const firebaseConfig = {
-  apiKey: apiKey,
-  authDomain: authDomain,
-  databaseURL: databaseURL,
-  projectId: projectId,
-  storageBucket: storageBucket,
-  messagingSenderId: messagingSenderId,
-  appId: appId,
-  measurementId: measurementId
+  apiKey: appEnv.apiKey,
+  authDomain: appEnv.authDomain,
+  databaseURL: appEnv.databaseURL,
+  projectId: appEnv.projectId,
+  storageBucket: appEnv.storageBucket,
+  messagingSenderId: appEnv.messagingSenderId,
+  appId: appEnv.appId,
+  measurementId: appEnv.measurementId
 };
 
 const app = initializeApp(firebaseConfig);
