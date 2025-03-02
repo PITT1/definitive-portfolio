@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId, appId, measurementId } from './env';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDpAQh0_eSa8ek6TgeQDbSYt6b-9m0D32A",
-  authDomain: "likes-count-94186.firebaseapp.com",
-  databaseURL: "https://likes-count-94186-default-rtdb.firebaseio.com",
-  projectId: "likes-count-94186",
-  storageBucket: "likes-count-94186.firebasestorage.app",
-  messagingSenderId: "914108387002",
-  appId: "1:914108387002:web:230e41f5a9516029f13c83",
-  measurementId: "G-PGMPN3295H"
+  apiKey: apiKey,
+  authDomain: authDomain,
+  databaseURL: databaseURL,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId,
+  measurementId: measurementId
 };
 
 const app = initializeApp(firebaseConfig);
